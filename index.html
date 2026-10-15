@@ -1,58 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
-<title>Ben Coppage - Portfolio</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ben Coppage &mdash; Data Analyst &amp; Client Success</title>
+<meta name="description" content="Client success and analyst candidate in Chicago. Consultative account management paired with SQL, Python, and Power BI.">
+<meta property="og:title" content="Ben Coppage &mdash; Data Analyst &amp; Client Success">
+<meta property="og:description" content="Client success and analyst candidate in Chicago. Consultative account management paired with SQL, Python, and Power BI.">
+<meta property="og:type" content="website">
+<!-- TODO: LinkedIn needs an absolute URL here once the site is hosted, e.g. https://example.com/photo.jpg -->
+<meta property="og:image" content="photo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<header>
-<nav>
-<a href="#about">About</a>
-<a href="#projects">Projects</a>
-<a href="#contact">Contact</a>
-</nav>
+<body data-track="consultative">
+
+<header class="site">
+  <nav aria-label="Primary">
+    <a class="brand" href="#top">Ben Coppage</a>
+    <ul class="links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#timeline">Timeline</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 </header>
+
 <main>
-<section id="hero">
-<h1>Ben Coppage</h1>
-<p class="tagline">
-Aspiring Data Professional - i.c.stars
-</p>
-</section>
-<section id="about">
-<h2>About Me</h2>
-<p>I am currently completing my BSBA in Management Information Systems (minor Economics) and will finish the following before graduation:
-Project - Venezuelan Migration and neighborhood Change in Chicago(2022-2026)
-Question - Since Chicago's 2022 surge in Venzuelan arrivals, how has the settlement concentrated geographically, and what measurable effects followed in housing and small business activity in those areas?</p>
-</section>
-<section id="projects">
-<h2>Projects</h2>
-<div class="project">
-<h3>Project Title</h3>
-<p>What it does and what you built.</p>
-</div>
-<div class="project">
-<h3>Project Title</h3>
-<p>What it does and what you built.</p>
-</div>
-</section>
-<section id="contact">
-<h2>Contact</h2>
-<p>Email:
-<a href="mailto:you@example.com">you@example.com</a>
-</p>
-<p>GitHub:
-<a href="https://github.com/yourusername">
-github.com/yourusername</a>
-</p>
-</section>
+
+  <section id="top" class="hero" aria-label="Introduction">
+    <!-- TODO: client supplies photo.jpg (square crop works best) -->
+    <img src="photo.jpg" alt="Ben Coppage" width="140" height="140">
+    <h1>Ben Coppage</h1>
+    <div class="toggle" role="group" aria-label="Choose a focus">
+      <button type="button" data-track="consultative" aria-pressed="true">Consultative</button>
+      <button type="button" data-track="data" aria-pressed="false">Data</button>
+    </div>
+    <p id="tagline" aria-live="polite">I turn complex client problems into clear decisions &mdash; across logistics, credit, benefits, and lending.</p>
+    <div class="ctas">
+      <a class="btn fill" href="#work">View my work</a>
+      <!-- TODO: client supplies resume.pdf -->
+      <a class="btn line" href="resume.pdf">Download resume</a>
+    </div>
+  </section>
+
+  <section id="glance" class="sec reveal" aria-labelledby="glance-h">
+    <div class="inner wide">
+      <h2 id="glance-h" class="sr-only">At a glance</h2>
+      <ul class="stats">
+        <li>
+          <span class="stat-num" data-to="1" data-pre="$" data-suf="M+">$1M+</span>
+          <span class="stat-label">Largest account grown, Echo Global Logistics</span>
+        </li>
+        <li>
+          <span class="stat-num" data-to="200" data-suf="+">200+</span>
+          <span class="stat-label">Outbound calls per day at peak</span>
+        </li>
+        <li>
+          <span class="stat-num" data-to="1200" data-suf="+">1,200+</span>
+          <span class="stat-label">Credit applications processed monthly</span>
+        </li>
+        <li>
+          <span class="stat-num" data-to="25" data-suf="+">25+</span>
+          <span class="stat-label">Years across client-facing roles</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="about" class="sec reveal">
+    <div class="inner prose">
+      <p class="eyebrow">01 &mdash; About</p>
+      <h2>About</h2>
+      <p>I started as a U.S. Army combat medic. I then co-founded a hair salon in Germany and graduated first in my class from a German evening school. Those years built composure, initiative, and comfort working across cultures.</p>
+      <p>I have spent two decades across collections, credit analysis, logistics account management, Medicare benefits, and VA mortgage lending. The through-line is turning complex information into clear decisions.</p>
+      <p>Right now I am a Technology &amp; Leadership Intern at i.c.stars. I am building SQL, Power BI, and consulting skills on a real client engagement. I am also completing a BSBA in MIS with an Economics minor at SNHU, and I plan to pursue a master's in data science or analytics.</p>
+    </div>
+  </section>
+
+  <section id="work" class="sec reveal">
+    <div class="inner prose">
+      <p class="eyebrow">02 &mdash; Selected Work</p>
+      <h2>Selected Work</h2>
+      <div class="cards">
+
+        <article class="card">
+          <p class="meta">Echo Global Logistics &middot; Client Representative &middot; <span class="num">2015&ndash;2019</span></p>
+          <h3>Growing a <span class="num">$1M</span> logistics account</h3>
+          <p class="problem">A plant distributor placed only sporadic orders.</p>
+          <ul>
+            <li>Built a steady logistics program.</li>
+            <li>Aligned shipping with the client's business cycle.</li>
+            <li>Kept communication transparent.</li>
+          </ul>
+          <p class="result">Grew the account to <span class="num">$1M+</span> in annual spend.</p>
+        </article>
+
+        <article class="card">
+          <p class="meta">Credit Acceptance &middot; Credit Analyst &middot; <span class="num">2011&ndash;2013</span></p>
+          <h3>High-volume credit analysis with near-zero errors</h3>
+          <p class="problem">Auto finance applications needed accurate, audit-ready decisions at scale.</p>
+          <ul>
+            <li>Promoted from collector to analyst within <span class="num">3</span> months.</li>
+            <li>Validated data on every file and documented decisions for internal audit.</li>
+            <li>Communicated adverse decisions to dealerships.</li>
+          </ul>
+          <p class="result">Processed <span class="num">1,200+</span> applications per month with near-zero error rates for over two years.</p>
+        </article>
+
+        <article class="card">
+          <p class="meta">i.c.stars &middot; Technology &amp; Leadership Intern &middot; <span class="num">2026</span></p>
+          <h3>Consulting on an operations problem at scale</h3>
+          <!-- TODO: replace "a Fortune 500 healthcare distributor" with the real client name once NDA clearance is confirmed. -->
+          <p class="problem">A Fortune 500 healthcare distributor needed to streamline an operations workflow.</p>
+          <ul>
+            <li>Served on the All Stars Associates consulting team.</li>
+            <li>Scoped the problem, modeled data in SQL, and built Power BI views.</li>
+            <li>Proposed a solution called Cascade.</li>
+          </ul>
+          <p class="result">Delivered an RFP response recommending Cascade. Pending client review.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="timeline" class="sec reveal">
+    <div class="inner wide">
+      <p class="eyebrow">03 &mdash; Career Arc</p>
+      <h2>Career Arc</h2>
+      <ol class="timeline">
+        <li>
+          <span class="yrs">1992&ndash;1995</span>
+          <div><strong>U.S. Army, Combat Medic (91B)</strong><span class="desc">Emergency medical care under pressure.</span></div>
+        </li>
+        <li>
+          <span class="yrs">1995&ndash;2000</span>
+          <div><strong>Co-founder, hair salon, Huenfeld, Germany</strong><span class="desc">Built a business abroad; graduated first in evening school.</span></div>
+        </li>
+        <li>
+          <span class="yrs">2011&ndash;2013</span>
+          <div><strong>Credit Analyst, Credit Acceptance</strong><span class="desc">Promoted within <span class="num">3</span> months; <span class="num">1,200+</span> applications monthly.</span></div>
+        </li>
+        <li>
+          <span class="yrs">2015&ndash;2019</span>
+          <div><strong>Client Representative, Echo Global Logistics</strong><span class="desc">Grew a logistics account past <span class="num">$1M</span> in annual spend.</span></div>
+        </li>
+        <li>
+          <span class="yrs">2023&ndash;2027</span>
+          <div><strong>BSBA, MIS &amp; Economics, SNHU</strong><span class="desc">Building the analytical foundation for what's next.</span></div>
+        </li>
+        <li>
+          <span class="yrs">2026</span>
+          <div><strong>Technology &amp; Leadership Intern, i.c.stars</strong><span class="desc">SQL, Power BI, and consulting on a live client project.</span></div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="skills" class="sec reveal">
+    <div class="inner prose">
+      <p class="eyebrow">04 &mdash; Skills</p>
+      <h2>Skills</h2>
+      <!-- Heading emphasis follows the hero toggle: rust on the left column for Consultative, teal on the right column for Data. Content never changes. -->
+      <div class="skill-cols">
+        <div class="col col-client">
+          <h3>Client &amp; Operations</h3>
+          <ul class="tags">
+            <li>Account Management</li>
+            <li>Consultative Sales</li>
+            <li>Client Retention</li>
+            <li>Stakeholder Communication</li>
+            <li>Dispute Resolution</li>
+            <li>B2B Collections</li>
+            <li>DSO Reduction</li>
+            <li>Process Accuracy</li>
+            <li>Cross-functional Collaboration</li>
+          </ul>
+        </div>
+        <div class="col col-data">
+          <h3>Data &amp; Technical</h3>
+          <ul class="tags">
+            <li>SQL</li>
+            <li>Power BI</li>
+            <li>Python</li>
+            <li>Advanced Excel</li>
+            <li>Data Validation</li>
+            <li>KPI Interpretation</li>
+            <li>Statistical Analysis</li>
+          </ul>
+          <p class="note">In training. Target work-ready by December <span class="num">2026</span>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="sec reveal">
+    <div class="inner prose">
+      <p class="eyebrow">05 &mdash; Contact</p>
+      <h2>Let's talk.</h2>
+      <p>Open to analyst, consulting, and client-success roles in Chicago and remote.</p>
+      <ul class="contact-links">
+        <li>
+          <a href="mailto:benlevi.coppage@gmail.com">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 7l8.5 6 8.5-6"/></svg>
+            benlevi.coppage@gmail.com
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/bencoppage" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 10.5V16M8 7.5v.01M12 16v-5.5M12 13c0-1.7 1-2.5 2.3-2.5S16.5 11.3 16.5 13V16"/></svg>
+            linkedin.com/in/bencoppage
+          </a>
+        </li>
+        <li>
+          <!-- TODO: client will supply the GitHub handle. Replace the placeholder URL below. -->
+          <a href="https://github.com/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="5.5" r="2.5"/><circle cx="6" cy="18.5" r="2.5"/><circle cx="18" cy="9" r="2.5"/><path d="M6 8v8M18 11.5c0 3-4 3.5-12 5.5"/></svg>
+            GitHub
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
 </main>
-<footer>
-<p>&copy; 2026 Ben Coppage</p>
-</footer>
+
+<footer>&copy; <span class="num">2026</span> Ben Coppage &middot; Chicago, IL</footer>
+
+<script>
+(function () {
+  var d = document, rm = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var T = {
+    consultative: "I turn complex client problems into clear decisions \u2014 across logistics, credit, benefits, and lending.",
+    data: "Building SQL, Python, and Power BI skills to pair a decade of client insight with real analysis."
+  };
+  var btns = d.querySelectorAll('.toggle button'), tag = d.getElementById('tagline');
+  btns.forEach(function (b) {
+    b.addEventListener('click', function () {
+      btns.forEach(function (x) { x.setAttribute('aria-pressed', x === b); });
+      tag.textContent = T[b.dataset.track];
+      d.body.dataset.track = b.dataset.track;
+    });
+  });
+  function count(el) {
+    var t = +el.dataset.to, s = null;
+    (function step(ts) {
+      s = s || ts;
+      var p = Math.min((ts - s) / 900, 1);
+      el.textContent = (el.dataset.pre || '') + Math.round(t * p).toLocaleString('en-US') + (el.dataset.suf || '');
+      if (p < 1) requestAnimationFrame(step);
+    })(performance.now());
+  }
+  if (!('IntersectionObserver' in window)) return;
+  if (!rm) {
+    d.documentElement.classList.add('js');
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        e.target.classList.add('in');
+        e.target.querySelectorAll('[data-to]').forEach(count);
+        io.unobserve(e.target);
+      });
+    }, { threshold: 0.12 });
+    d.querySelectorAll('.reveal').forEach(function (s) { io.observe(s); });
+  }
+  var links = d.querySelectorAll('.links a'), hdr = d.querySelector('header');
+  var so = new IntersectionObserver(function (es) {
+    es.forEach(function (e) {
+      if (e.isIntersecting) links.forEach(function (a) {
+        a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id);
+      });
+    });
+  }, { rootMargin: '-45% 0px -50% 0px' });
+  d.querySelectorAll('main section[id]').forEach(function (s) { so.observe(s); });
+  new IntersectionObserver(function (e) {
+    hdr.classList.toggle('scrolled', !e[0].isIntersecting);
+  }).observe(d.getElementById('top'));
+})();
+</script>
 </body>
 </html>
 
