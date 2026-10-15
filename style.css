@@ -1,4 +1,3 @@
- CSS
 :root {
   --ink:         #1A1F2E;
   --ink-soft:    #4A5163;
@@ -31,7 +30,7 @@ a { color: var(--accent); }
   position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
   overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
 }
- 
+
 /* Nav */
 header.site {
   position: sticky; top: 0; z-index: 10;
@@ -56,7 +55,7 @@ nav {
 }
 .links a:hover { color: var(--ink); }
 .links a.active { color: var(--ink); border-bottom-color: var(--accent); }
- 
+
 /* Sections */
 main section { scroll-margin-top: 5rem; }
 .sec { padding: 6rem var(--u); }
@@ -77,7 +76,7 @@ h2 {
   opacity: 1; transform: none;
   transition: opacity 400ms ease-out, transform 400ms ease-out;
 }
- 
+
 /* Hero */
 .hero {
   min-height: 60vh; padding: 4rem var(--u);
@@ -110,7 +109,7 @@ h1 {
 .btn.fill { background: var(--accent); color: #fff; }
 .btn.line { background: transparent; color: var(--accent); }
 .btn:hover { filter: brightness(0.94); }
- 
+
 /* Stats */
 .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--u); list-style: none; margin: 0; padding: 0; }
 .stats li { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 1.25rem; }
@@ -119,7 +118,7 @@ h1 {
   font-size: clamp(2rem, 4vw, 2.75rem); line-height: 1.15; color: var(--signal);
 }
 .stat-label { display: block; font-size: 0.875rem; color: var(--ink-soft); line-height: 1.45; margin-top: 0.25rem; }
- 
+
 /* Work cards */
 .cards { display: flex; flex-direction: column; gap: 1.25rem; }
 .card {
@@ -134,7 +133,7 @@ h1 {
 .card li { margin-bottom: 0.25rem; }
 .card .result { margin: 0; padding-top: 1rem; border-top: 1px solid var(--line); font-weight: 500; }
 .card .result .num { color: var(--signal); font-weight: 600; }
- 
+
 /* Timeline */
 .timeline { list-style: none; margin: 0; padding: 0 0 0 1.75rem; border-left: 1px solid var(--line); }
 .timeline li { position: relative; display: grid; grid-template-columns: 140px 1fr; gap: var(--u); padding-bottom: 2rem; }
@@ -146,7 +145,7 @@ h1 {
 .timeline .yrs { font-family: var(--mono); font-size: 0.9375rem; color: var(--accent); padding-top: 0.1rem; }
 .timeline strong { display: block; font-weight: 600; line-height: 1.4; }
 .timeline .desc { display: block; color: var(--ink-soft); font-size: 0.9375rem; margin-top: 0.125rem; }
- 
+
 /* Skills */
 .skill-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
 .col { border-top: 2px solid transparent; padding-top: 1rem; }
@@ -163,15 +162,15 @@ body:not([data-track="data"]) .col-client { border-top-color: var(--accent); }
 body:not([data-track="data"]) .col-client h3 { color: var(--accent); }
 body[data-track="data"] .col-data { border-top-color: var(--signal); }
 body[data-track="data"] .col-data h3 { color: var(--signal); }
- 
+
 /* Contact */
 .contact-links { list-style: none; margin: 1.5rem 0 0; padding: 0; display: flex; flex-direction: column; gap: 0.75rem; }
 .contact-links a { display: inline-flex; align-items: center; gap: 0.625rem; color: var(--accent); text-decoration: none; word-break: break-word; }
 .contact-links a:hover { text-decoration: underline; }
 .contact-links svg { width: 20px; height: 20px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
- 
+
 footer { text-align: center; color: var(--ink-soft); font-size: 0.875rem; padding: 2rem var(--u) 3rem; }
- 
+
 @media (max-width: 900px) {
   .stats { grid-template-columns: repeat(2, 1fr); }
 }
