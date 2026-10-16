@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Do central bank wins translate to household wins?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  color-scheme: dark;
+  --bg: #0F1420;
+  --surface: #171D2C;
+  --line: #2A3144;
+  --text: #E8EAF0;
+  --soft: #A3AABB;
+  --accent: #E07A5F;
+  --signal: #2DD4BF;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+main { max-width: 760px; margin: 0 auto; padding: 3rem 1rem 5rem; }
+a { color: var(--accent); }
+h1 { font-size: clamp(2rem, 5vw, 3rem); line-height: 1.15; margin: 0 0 0.5rem; }
+h2 { font-size: 1.5rem; margin: 3rem 0 1rem; }
+.meta { font-family: "JetBrains Mono", monospace; font-size: 0.8125rem; color: var(--soft); }
+.back { font-size: 0.9375rem; text-decoration: none; }
+</style>
+</head>
+<body>
+<main>
+  <p><a class="back" href="index.html#work">Back to portfolio</a></p>
+  <h1>Do central bank wins translate to household wins?</h1>
+  <p class="meta">U.S. vs. Euro Area, 2015 to 2025 · Ben Coppage · October 2025</p>
+
+    <section>
+    <h2>The Finding</h2>
+    <p>In the end, both the Federal Reserve and the European Central Bank achieved their narrow mandates of disinflation between 2023 and 2025. Inflation converged toward 2 percent, unemployment remained stable, and financial systems avoided crisis. Growth diverged more sharply: U.S. real GDP averaged about 2.8 percent in 2024, while the Euro Area ran at about 1.5 percent in the first half of 2025, still well below the U.S. pace.</p>
+    <p>Yet beneath those aggregates, household balance sheets told a different story. U.S. households entered 2025 with savings rates hovering around 5 to 6 percent and debt levels in the range of 68 to 74 percent of GDP. By contrast, Euro Area households maintained significantly higher savings rates of about 13 to 15 percent and lower debt ratios of roughly 51 to 55 percent of GDP. These indicators show that while the macro picture converged, the micro foundations of resilience diverged.</p>
+  </section>
+
+    <section>
+    <h2>Exhibits</h2>
+
+    <figure style="margin:0 0 2.5rem;">
+      <h3 style="font-size:1.0625rem;margin:0 0 0.75rem;">Exhibit 1: Policy rates and inflation paths, U.S. vs. Euro Area, 2015 to 2025</h3>
+      <img src="images/exhibit1.png" alt="Line chart, 2015 to 2025, of the federal funds rate and ECB main refinancing rate (shifted 12 months) with U.S. CPI and Euro Area HICP inflation." style="max-width:100%;height:auto;border-radius:6px;border:1px solid var(--line);">
+      <figcaption style="color:var(--soft);font-size:0.9375rem;margin-top:0.75rem;">Both central banks raised rates sharply in 2022 and 2023. U.S. inflation peaked at 9.0 percent in June 2022, and both regions fell back toward 2 percent.<br><span class="meta">Sources: FRED, European Central Bank, Eurostat. Policy rates shown with a 12-month lag.</span></figcaption>
+    </figure>
+
+    <figure style="margin:0 0 2.5rem;">
+      <h3 style="font-size:1.0625rem;margin:0 0 0.75rem;">Exhibit 2: Household saving rates and debt-to-GDP, U.S. vs. Euro Area, 2015 to 2025</h3>
+      <img src="images/exhibit2.png" alt="Two line charts, 2015 Q1 to 2025 Q1: household saving rates and household debt-to-GDP for the U.S. and Euro Area." style="max-width:100%;height:auto;border-radius:6px;border:1px solid var(--line);">
+      <figcaption style="color:var(--soft);font-size:0.9375rem;margin-top:0.75rem;">Euro Area households saved consistently more. U.S. households carried consistently higher leverage.<br><span class="meta">Source: Bank for International Settlements.</span></figcaption>
+    </figure>
+
+    <figure style="margin:0 0 2.5rem;">
+      <h3 style="font-size:1.0625rem;margin:0 0 0.75rem;">Exhibit 3: Headline success vs. household reality, U.S. and Euro Area, 2015 to 2025</h3>
+      <img src="images/exhibit3.png" alt="Panel A: scatterplot of household saving rate against debt-to-GDP. Panel B: line chart of U.S. and Euro Area inflation with a 2 percent target line." style="max-width:100%;height:auto;border-radius:6px;border:1px solid var(--line);">
+      <figcaption style="color:var(--soft);font-size:0.9375rem;margin-top:0.75rem;">Panel A plots household saving rates against household debt burdens. Panel B tracks inflation against the 2 percent target over the same period.<br><span class="meta">Sources: FRED, Eurostat, Bank for International Settlements.</span></figcaption>
+    </figure>
+  </section>
+
+   <section>
+    <h2>Why It Matters</h2>
+    <p>Euro Area member states maintain more robust social welfare systems and stronger worker protections, reinforcing household resilience even amid slower growth. The United States, by contrast, delivers faster expansion but leaves households more vulnerable.</p>
+    <p>The lesson for both institutions is clear: monetary policy outcomes must not be assessed in isolation, but in concert with fiscal and social policy, domains neither central bank governs.</p>
+  </section>
+
+   <section>
+    <h2>Method Note</h2>
+    <p><strong>Data.</strong> Policy rates are the federal funds rate (FRED) and the ECB main refinancing rate (ECB). Inflation is U.S. CPI and Euro Area HICP, year-over-year. Unemployment and real GDP growth (year-over-year) are U.S. series from FRED and Euro Area series from Eurostat. Household saving rates and household debt-to-GDP come from the Bank for International Settlements. Monthly series run from 2015 to 2025. Unemployment, GDP growth, and the Phillips curve cover 2023 to 2025. Household series are quarterly and run through early 2025.</p>
+    <p><strong>What was compared.</strong> Each series was compared across the U.S. and the Euro Area over the same window. The question was whether disinflation toward the 2 percent target came with stable unemployment and continued growth, and whether household balance sheets looked the same on both sides.</p>
+    <p><strong>Limitations.</strong></p>
+    <ul>
+      <li>The rate series ends August 2024. Any claim about late 2024 rate cuts depends on an external source.</li>
+      <li>Policy rates in Exhibit 1 are shown with a 12-month lag to reflect transmission effects.</li>
+      <li>The differences cannot be attributed to monetary policy alone. Fiscal and social policy sit outside the central banks' mandates and outside the scope of the data.</li>
+    </ul>
+  </section>
+
+  <!-- NEXT SECTION GOES HERE -->
+
+</main>
+</body>
+</html>
