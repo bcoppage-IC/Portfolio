@@ -34,6 +34,8 @@ h1 { font-size: clamp(2rem, 5vw, 3rem); line-height: 1.15; margin: 0 0 0.5rem; }
 h2 { font-size: 1.5rem; margin: 3rem 0 1rem; }
 .meta { font-family: "JetBrains Mono", monospace; font-size: 0.8125rem; color: var(--soft); }
 .back { font-size: 0.9375rem; text-decoration: none; }
+.refs { list-style: none; padding: 0; font-size: 0.875rem; color: var(--soft); }
+.refs li { margin: 0 0 0.6rem; padding-left: 1.5rem; text-indent: -1.5rem; overflow-wrap: anywhere; }
 </style>
 </head>
 <body>
@@ -42,19 +44,19 @@ h2 { font-size: 1.5rem; margin: 3rem 0 1rem; }
   <h1>Do central bank wins translate to household wins?</h1>
   <p class="meta">U.S. vs. Euro Area, 2015 to 2025 · Ben Coppage · October 2025</p>
 
-    <section>
+  <section>
     <h2>The Finding</h2>
-    <p>In the end, both the Federal Reserve and the European Central Bank achieved their narrow mandates of disinflation between 2023 and 2025. Inflation converged toward 2 percent, unemployment remained stable, and financial systems avoided crisis. Growth diverged more sharply: U.S. real GDP averaged about 2.8 percent in 2024, while the Euro Area ran at about 1.5 percent in the first half of 2025, still well below the U.S. pace.</p>
-    <p>Yet beneath those aggregates, household balance sheets told a different story. From 2023 to early 2025, U.S. households had savings rates hovering around 5 to 6 percent and debt levels in the range of 68 to 74 percent of GDP. By contrast, Euro Area households maintained significantly higher savings rates of about 13 to 15 percent and lower debt ratios of roughly 51 to 55 percent of GDP. These indicators show that while the macro picture converged, the micro foundations of resilience diverged.</p>
+    <p>In the end, both the Federal Reserve and the European Central Bank achieved their narrow mandates of disinflation between 2023 and 2025. Inflation converged toward 2 percent, unemployment remained stable, and financial systems avoided crisis. Growth diverged more sharply: in 2024, U.S. real GDP growth averaged about 2.8 percent against about 0.8 percent in the Euro Area. In the first half of 2025, the U.S. ran near 2.1 percent and the Euro Area near 1.5 percent, still below the U.S. pace.</p>
+    <p>Yet beneath those aggregates, household balance sheets told a different story. From 2023 through mid-2025, U.S. household savings rates ran between 4.7 and 6.1 percent, with debt at 68 to 74 percent of GDP. By contrast, Euro Area households saved 13.4 to 15.2 percent and carried debt of 51 to 55 percent of GDP. These indicators show that while the macro picture converged, the micro foundations of resilience diverged.</p>
   </section>
 
-    <section>
+  <section>
     <h2>Exhibits</h2>
 
     <figure style="margin:0 0 2.5rem;">
       <h3 style="font-size:1.0625rem;margin:0 0 0.75rem;">Exhibit 1: Policy rates and inflation paths, U.S. vs. Euro Area, 2015 to 2025</h3>
-      <img src="images/exhibit1.png" alt="Line chart, 2015 to 2025, of the federal funds rate and ECB main refinancing rate (shifted 12 months) with U.S. CPI and Euro Area HICP inflation." style="max-width:100%;height:auto;border-radius:6px;border:1px solid var(--line);">
-      <figcaption style="color:var(--soft);font-size:0.9375rem;margin-top:0.75rem;">Both central banks raised rates sharply in 2022 and 2023. U.S. inflation peaked at 9.0 percent in June 2022, and both regions fell back toward 2 percent.<br><span class="meta">Sources: FRED, European Central Bank, Eurostat. Policy rates shown with a 12-month lag.</span></figcaption>
+      <img src="images/exhibit1.png" alt="Line chart, 2015 to 2025, of the federal funds rate and ECB main refinancing rate (lagged 12 months) with U.S. CPI and Euro Area HICP inflation." style="max-width:100%;height:auto;border-radius:6px;border:1px solid var(--line);">
+      <figcaption style="color:var(--soft);font-size:0.9375rem;margin-top:0.75rem;">Policy rates are shifted forward 12 months for the delay before they affect inflation, so the 2022 hikes appear in 2023. Inflation peaked at 9.0 percent in the U.S. (June 2022) and 10.6 percent in the Euro Area (October 2022), then fell back toward 2 percent.<br><span class="meta">Sources: FRED, European Central Bank, Eurostat. Rates run through August 2024; inflation through August 2025.</span></figcaption>
     </figure>
 
     <figure style="margin:0 0 2.5rem;">
@@ -70,25 +72,57 @@ h2 { font-size: 1.5rem; margin: 3rem 0 1rem; }
     </figure>
   </section>
 
-   <section>
+  <section>
     <h2>Why It Matters</h2>
     <p>Euro Area member states maintain more robust social welfare systems and stronger worker protections, reinforcing household resilience even amid slower growth. The United States, by contrast, delivers faster expansion but leaves households more vulnerable.</p>
     <p>The lesson for both institutions is clear: monetary policy outcomes must not be assessed in isolation, but in concert with fiscal and social policy, domains neither central bank governs.</p>
   </section>
 
-   <section>
+  <section>
     <h2>Method Note</h2>
-    <p><strong>Data.</strong> Policy rates are the federal funds rate (FRED) and the ECB main refinancing rate (ECB). Inflation is U.S. CPI and Euro Area HICP, year-over-year. Unemployment and real GDP growth (year-over-year) are U.S. series from FRED and Euro Area series from Eurostat. Household saving rates and household debt-to-GDP come from the Bank for International Settlements. Monthly series run from 2015 to 2025. Unemployment, GDP growth, and the Phillips curve cover 2023 to 2025. Household series are quarterly and run through early 2025.</p>
+    <p><strong>Data.</strong> Policy rates are the federal funds rate (FRED) and the ECB main refinancing rate (ECB). Policy rates are lagged 12 months to align rate changes with their expected effect on inflation. Rate changes act on prices with a delay (Friedman, 1961), and a meta-analysis puts the average lag to the peak effect on prices at 29 months (Havranek and Rusnak, 2013). This brief uses 12 months, a conservative choice at the short end of that range. Inflation is U.S. CPI and Euro Area HICP, year-over-year. Unemployment and real GDP growth (year-over-year) are U.S. series from FRED and Euro Area series from Eurostat. Household saving rates and household debt-to-GDP come from the Bank for International Settlements. Monthly inflation and unemployment series run from 2015 through August 2025. The policy rate series runs from 2014 through August 2024. Unemployment, GDP growth, and the Phillips curve cover 2023 to 2025. Household series are quarterly: saving rates run through 2025 Q2 and debt-to-GDP through 2025 Q1.</p>
     <p><strong>What was compared.</strong> Each series was compared across the U.S. and the Euro Area over the same window. The question was whether disinflation toward the 2 percent target came with stable unemployment and continued growth, and whether household balance sheets looked the same on both sides.</p>
     <p><strong>Limitations.</strong></p>
     <ul>
-      <li>The rate series ends August 2024. Any claim about late 2024 rate cuts depends on an external source.</li>
-      <li>Policy rates in Exhibit 1 are shown with a 12-month lag to reflect transmission effects.</li>
+      <li>Policy rate data ends August 2024. It does not include the rate cuts that followed.</li>
       <li>The differences cannot be attributed to monetary policy alone. Fiscal and social policy sit outside the central banks' mandates and outside the scope of the data.</li>
     </ul>
   </section>
 
-  <!-- NEXT SECTION GOES HERE -->
+  <section>
+    <h2>Supporting Charts</h2>
+
+    <figure style="margin:0 0 2.5rem;">
+      <h3 style="font-size:1.0625rem;margin:0 0 0.75rem;">Figure 1: Unemployment rates, U.S. vs. Euro Area, 2023 to 2025</h3>
+      <img src="images/figure1.png" alt="Line chart of monthly unemployment, January 2023 to August 2025: U.S. between 3.4 and 4.3 percent, Euro Area between 6.2 and 6.7 percent." style="max-width:100%;height:auto;border-radius:6px;border:1px solid var(--line);">
+      <figcaption style="color:var(--soft);font-size:0.9375rem;margin-top:0.75rem;">U.S. unemployment remained stable around 3.4 to 4.3 percent, while Euro Area unemployment persisted at a higher level of 6.2 to 6.7 percent.<br><span class="meta">Sources: FRED, Eurostat.</span></figcaption>
+    </figure>
+
+    <figure style="margin:0 0 2.5rem;">
+      <h3 style="font-size:1.0625rem;margin:0 0 0.75rem;">Figure 2: Real GDP growth, year-over-year, U.S. vs. Euro Area, 2023 to 2025</h3>
+      <img src="images/figure2.png" alt="Line chart of quarterly year-over-year real GDP growth, 2023 Q1 to 2025 Q2: U.S. between 2.0 and 3.4 percent, Euro Area between 0.0 and 1.6 percent." style="max-width:100%;height:auto;border-radius:6px;border:1px solid var(--line);">
+      <figcaption style="color:var(--soft);font-size:0.9375rem;margin-top:0.75rem;">Quarterly year-over-year real GDP growth in the United States and the Euro Area.<br><span class="meta">Sources: FRED, Eurostat.</span></figcaption>
+    </figure>
+
+    <figure style="margin:0 0 2.5rem;">
+      <h3 style="font-size:1.0625rem;margin:0 0 0.75rem;">Figure 3: Phillips curve, U.S. vs. Euro Area, 2023 to 2025</h3>
+      <img src="images/figure3.png" alt="Scatterplot of inflation against unemployment, 2023 to 2025: U.S. points at 3.4 to 4.3 percent unemployment, Euro Area points at 6.2 to 6.7 percent." style="max-width:100%;height:auto;border-radius:6px;border:1px solid var(--line);">
+      <figcaption style="color:var(--soft);font-size:0.9375rem;margin-top:0.75rem;">U.S. points cluster at 3.4 to 4.3 percent unemployment with inflation between 2.3 and 6.3 percent. Euro Area points cluster at 6.2 to 6.7 percent unemployment with inflation between 1.7 and 8.7 percent. Both economies disinflated while unemployment moved only modestly.<br><span class="meta">Sources: FRED, Eurostat.</span></figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>References</h2>
+    <ul class="refs">
+      <li>Bank for International Settlements. (n.d.). <em>Household debt and saving statistics</em>. <a href="https://www.bis.org">https://www.bis.org</a></li>
+      <li>European Central Bank. (n.d.). <em>Refinancing operations</em>. <a href="https://www.ecb.europa.eu/mopo/implement/omo/html/index.en.html">https://www.ecb.europa.eu/mopo/implement/omo/html/index.en.html</a></li>
+      <li>Eurostat. (2025). <em>GDP and employment both up by 0.1% in the euro area, Euro indicators, Q2 2025</em>. <a href="https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-05092025-ap">https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-05092025-ap</a></li>
+      <li>Eurostat. (n.d.). <em>Unemployment statistics</em>. <a href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Unemployment_statistics">https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Unemployment_statistics</a></li>
+      <li>Federal Reserve Bank of St. Louis. (n.d.). <em>FRED economic data</em>. <a href="https://fred.stlouisfed.org">https://fred.stlouisfed.org</a></li>
+      <li>Friedman, M. (1961). The lag in effect of monetary policy. <em>Journal of Political Economy, 69</em>(5), 447&#8211;466.</li>
+      <li>Havranek, T., &amp; Rusnak, M. (2013). Transmission lags of monetary policy: A meta-analysis. <em>International Journal of Central Banking, 9</em>(4), 39&#8211;76. <a href="https://www.ijcb.org/journal/ijcb13q4a2.htm">https://www.ijcb.org/journal/ijcb13q4a2.htm</a></li>
+    </ul>
+  </section>
 
 </main>
 </body>
