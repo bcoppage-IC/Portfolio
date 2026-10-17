@@ -2,11 +2,16 @@
 
 Personal portfolio site for Ben Coppage. Built with plain HTML, CSS, and vanilla JavaScript. No frameworks and no build step.
 
+Live site: https://bcoppage-ic.github.io/Portfolio/
+
 ## Files
 
-- `index.html`: page content and inline script
+- `index.html`: main page content and inline script
+- `brief.html`: executive brief, "Do central bank wins translate to household wins?"
 - `style.css`: all styles
-- `photo.jpg`: headshot (square crop)
+- `images/`: headshot (`photo.jpg`, square crop) and other site images
+- `files/Executive_Brief_Coppage.pdf`: PDF version of the brief
+- `files/Brief_Data_Coppage.xlsx`: data workbook behind the brief
 - `resume.pdf`: resume for the download button
 
 ## Run locally
@@ -21,18 +26,17 @@ Open `index.html` in a browser. No install is needed.
 - Responsive down to 360px
 - Semantic HTML, visible focus states, and WCAG AA text contrast
 
-## Before publishing
+## Status
 
-- [ ] Add `photo.jpg` and `resume.pdf`
-- [ ] Replace the GitHub link placeholder in the Contact section
+- [x] Add headshot and `resume.pdf`
+- [x] Link GitHub profile in the Contact section
+- [x] Use an absolute `og:image` URL so LinkedIn previews work
+- [ ] Replace `resume.pdf` with the current resume
 - [ ] Replace the client description on the i.c.stars card once NDA clearance is confirmed
-- [ ] Change `og:image` to an absolute URL so LinkedIn previews work
 
 ## Deploy with GitHub Pages
 
-1. Push the files to the `main` branch.
-2. In the repo, go to **Settings**, then **Pages**.
-3. Set the source to the `main` branch, root folder, and save.
+The site deploys from the `main` branch, root folder. Push to `main` and the live site updates in about a minute.
 
 ## Fonts
 
