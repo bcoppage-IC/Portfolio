@@ -1,16 +1,18 @@
 :root {
-  --ink:         #1A1F2E;
-  --ink-soft:    #4A5163;
-  --paper:       #FBFAF7;
-  --surface:     #FFFFFF;
-  --line:        #E8E4DC;
-  --accent:      #B4553A;   /* warm rust: CTAs, links, eyebrows */
-  --accent-soft: #F4E6DF;
-  --signal:      #0F766E;   /* deep teal: data/technical highlights ONLY */
+  color-scheme: dark;
+  --ink:         #E8EAF0;
+  --ink-soft:    #A3AABB;
+  --paper:       #1A2132;
+  --surface:     #232B3E;
+  --line:        #353E54;
+  --accent:      #CE7452;   /* warm rust: CTAs, links, eyebrows */
+  --accent-soft: #3A2520;
+  --signal:      #17A295;   /* teal: data/technical highlights ONLY */
   --sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
   --u: 1rem;
 }
+
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
@@ -125,7 +127,7 @@ h1 {
   background: var(--surface); border: 1px solid var(--line); border-radius: 6px;
   padding: 1.5rem; transition: transform 200ms ease, box-shadow 200ms ease;
 }
-.card:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(26, 31, 46, 0.06); }
+.card:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35); }
 .card .meta { font-family: var(--mono); font-size: 0.8125rem; color: var(--accent); margin: 0 0 0.5rem; }
 .card h3 { font-size: 1.25rem; font-weight: 600; line-height: 1.3; margin: 0 0 0.75rem; }
 .card .problem { color: var(--ink-soft); }
