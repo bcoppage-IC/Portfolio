@@ -281,6 +281,13 @@
       if (p < 1) requestAnimationFrame(step);
     })(performance.now());
   }
+  
+    window.addEventListener('load', function () {
+        var id = location.hash.slice(1) || new URLSearchParams(location.search).get('card');
+    var t = id && d.getElementById(id);
+    if (t) window.scrollTo(0, t.getBoundingClientRect().top + window.pageYOffset - d.querySelector('header').offsetHeight - 16);
+  });
+
   if (!('IntersectionObserver' in window)) return;
   if (!rm) {
     d.documentElement.classList.add('js');
