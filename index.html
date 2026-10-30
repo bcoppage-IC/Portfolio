@@ -179,10 +179,13 @@
           <h3>Who Arrived, and Where Did They Live? Mapping Immigrant Settlement and Housing Pressure in Chicago</h3>
           <p class="problem">How did the change in foreign-born population across Chicago's <span class="num">77</span> community areas relate to housing stock and rental market outcomes between <span class="num">2015</span> and <span class="num">2024</span>?</p>
           <ul>
-            <li>Built a reproducible Python pipeline that pulls Census tract data and matches about <span class="num">800</span> tracts to the <span class="num">77</span> community areas, validated within <span class="num">0.02%</span> of Chicago population totals.</li>
+            <li>Built a reproducible Python pipeline that pulls Census tract data.</li>
+            <li>Matched about <span class="num">800</span> census tracts to Chicago's <span class="num">77</span> community areas with a spatial join, for both <span class="num">2010</span> and <span class="num">2020</span> tract boundaries.</li>
+            <li>Validated the <span class="num">2010</span> tract match against Chicago's population total, within <span class="num">0.02%</span>.</li>
+            <li>Rebuilt community-area median rent from Census rent-range data. The method reproduces Census-published tract medians within <span class="num">$1</span>.</li>
             <li>Tools: Python, pandas, GeoPandas, Census API, Git, GitHub.</li>
           </ul>
-          <p class="result">Next: community-area tables, maps, and a written analysis, with a target completion of <span class="num">November 15, 2026</span>. <a href="https://github.com/bcoppage-IC/chicago-immigrant-housing" target="_blank" rel="noopener">View the repo</a></p>
+          <p class="result">Next: a combined change table, maps, and a written analysis, with a target completion of <span class="num">November 15, 2026</span>. <a href="https://github.com/bcoppage-IC/chicago-immigrant-housing" target="_blank" rel="noopener">View the repo</a></p>
         </article>
 
       </div>
