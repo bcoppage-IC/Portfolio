@@ -177,15 +177,9 @@
         <article class="card" id="chicago_housing">
           <p class="meta">In progress &middot; Started <span class="num">October 2026</span></p>
           <h3>Who Arrived, and Where Did They Live? Mapping Immigrant Settlement and Housing Pressure in Chicago</h3>
-          <p class="problem">How did the change in foreign-born population across Chicago's <span class="num">77</span> community areas relate to housing stock and rental market outcomes between <span class="num">2015</span> and <span class="num">2024</span>?</p>
-          <ul>
-            <li>Built a reproducible Python pipeline that pulls Census tract data.</li>
-            <li>Matched about <span class="num">800</span> census tracts to Chicago's <span class="num">77</span> community areas with a spatial join, for both <span class="num">2010</span> and <span class="num">2020</span> tract boundaries.</li>
-            <li>Validated the <span class="num">2010</span> tract match against Chicago's population total, within <span class="num">0.02%</span>.</li>
-            <li>Rebuilt community-area median rent from Census rent-range data. The method reproduces Census-published tract medians within <span class="num">$1</span>.</li>
-            <li>Tools: Python, pandas, GeoPandas, Census API, Git, GitHub.</li>
-          </ul>
-          <p class="result">Next: a combined change table, maps, and a written analysis, with a target completion of <span class="num">November 15, 2026</span>. <a href="https://github.com/bcoppage-IC/chicago-immigrant-housing" target="_blank" rel="noopener">View the repo</a></p>
+          <img src="https://raw.githubusercontent.com/bcoppage-IC/chicago-immigrant-housing/main/outputs/map_fb_share_change.png" alt="Change in foreign-born share by Chicago community area" style="width: 100%; height: auto;">
+          <p class="problem">Compares change in foreign-born population with rent across Chicago's <span class="num">77</span> community areas, <span class="num">2011-2015</span> vs. <span class="num">2020-2024</span>. Early finding: areas where the foreign-born share fell saw larger rent increases (r = <span class="num">-0.37</span>). Avondale, Logan Square, and the Lower West Side lost about <span class="num">11,000</span> foreign-born residents combined while real rents rose <span class="num">23%</span> to <span class="num">32%</span>. Built in Python with Census API data, spatial joins, and checks against CMAP.</p>
+          <p class="result"><a href="https://github.com/bcoppage-IC/chicago-immigrant-housing" target="_blank" rel="noopener">View the repo</a></p>
         </article>
 
       </div>
