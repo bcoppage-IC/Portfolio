@@ -8,25 +8,30 @@
 <meta property="og:title" content="Ben Coppage | Business Consulting &amp; Consultative Sales">
 <meta property="og:description" content="Business consulting and consultative sales candidate in Chicago, open to remote and international roles. I turn client challenges into data-backed recommendations with SQL, Power BI, and Excel.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://bcoppage-ic.github.io/Portfolio/">
 <meta property="og:image" content="https://bcoppage-ic.github.io/Portfolio/images/og-image.jpg?v=2">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="627">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="style.css">
 </head>
-<body data-track="consultative">
+<body>
 
 <header class="site">
   <nav aria-label="Primary">
-    <a class="brand" href="#top">Ben Coppage</a>
-    <ul class="links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#work">Work</a></li>
-      <li><a href="#timeline">Timeline</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
+    <a class="brand" href="index.html" aria-current="page">Ben Coppage</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Menu">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <ul class="links" id="nav-links">
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+      <li><a class="nav-cta" href="#contact">Contact</a></li>
     </ul>
   </nav>
 </header>
@@ -34,22 +39,33 @@
 <main>
 
   <section id="top" class="hero" aria-label="Introduction">
-    <!-- TODO: client supplies photo.jpg (square crop works best) -->
     <img src="images/photo.jpg" alt="Ben Coppage" width="140" height="140">
     <h1>Ben Coppage</h1>
-    <div class="toggle" role="group" aria-label="Choose a focus">
-      <button type="button" data-track="consultative" aria-pressed="true">Consultative</button>
-      <button type="button" data-track="data" aria-pressed="false">Data</button>
-    </div>
-    <p id="tagline" aria-live="polite">I turn complex client challenges into clear decisions across logistics, credit, benefits, and lending.</p>
+    <p class="tagline">I turn complex client challenges into clear decisions. Now I'm adding SQL, Python, and Power BI to back them with data.</p>
     <div class="ctas">
-      <a class="btn fill" href="#work">View my work</a>
-      <!-- TODO: client supplies resume.pdf -->
-      <a class="btn line" href="resume.pdf">Download resume</a>
+      <a class="btn fill" href="projects.html">View my work</a>
+      <a class="btn line" href="resume.pdf" target="_blank" rel="noopener">View resume</a>
     </div>
   </section>
 
-  <section id="glance" class="sec reveal" aria-labelledby="glance-h">
+  <section id="featured" class="sec snug reveal" aria-labelledby="featured-h">
+    <div class="inner wide">
+      <article class="card feature">
+        <a class="feature-img" href="https://bcoppage-ic.github.io/chicago-immigrant-housing/" target="_blank" rel="noopener"><img src="images/chicago_dashboard.png" alt="Chicago immigrant settlement and rent dashboard, showing four key figures and a map of the 77 community areas" width="2560" height="1600"></a>
+        <div>
+          <p class="meta">Featured Project</p>
+          <h2 id="featured-h">Following the Shift: Immigrant Settlement and Rent in Chicago</h2>
+          <p class="problem">An interactive dashboard that ranks all <span class="num">77</span> Chicago community areas. Sliders let users decide what matters most.</p>
+          <div class="actions">
+            <a class="btn fill" href="https://bcoppage-ic.github.io/chicago-immigrant-housing/" target="_blank" rel="noopener">View the live dashboard</a>
+            <a href="https://github.com/bcoppage-IC/chicago-immigrant-housing" target="_blank" rel="noopener">View the code</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="glance" class="sec snug reveal" aria-labelledby="glance-h">
     <div class="inner wide">
       <h2 id="glance-h" class="sr-only">At a glance</h2>
       <ul class="stats">
@@ -58,8 +74,8 @@
           <span class="stat-label">Logistics account run-rate grown at Echo</span>
         </li>
         <li>
-          <span class="stat-num" data-to="1800" data-pre="~">~1,800</span>
-          <span class="stat-label">Medicare plans sold in 13 months</span>
+          <span class="stat-num" data-to="5" data-suf="x">5x</span>
+          <span class="stat-label">Freight margin vs. company benchmark at Echo ($800 to $1,600 per load vs. $100 to $300)</span>
         </li>
         <li>
           <span class="stat-num" data-to="1200" data-suf="+">1,200+</span>
@@ -73,230 +89,27 @@
     </div>
   </section>
 
-  <section id="about" class="sec reveal">
-    <div class="inner prose">
-      <p class="eyebrow">01 &middot; About</p>
-      <h2>About</h2>
-      <p>I started as a U.S. Army combat medic. I then co-founded a hair salon in Germany and graduated with top grades from a German evening school. Those years built composure, initiative, and comfort working across cultures.</p>
-      <p>I have spent 15+ years across collections, credit analysis, logistics account management, Medicare benefits, and VA mortgage lending. The through-line is turning complex information into clear decisions.</p>
-      <p>Right now I am a Technology &amp; Leadership Intern at i.c.stars. I am building SQL, Power BI, and consulting skills on a real client engagement. I am also completing a BSBA in MIS with an Economics minor at SNHU, and I plan to start a master's in data science at Georgia Tech in 2027 or 2028.</p>
-    </div>
-  </section>
-
-  <section id="work" class="sec reveal">
-    <div class="inner prose">
-      <p class="eyebrow">02 &middot; Selected Work</p>
-      <h2>Selected Work</h2>
-      <div class="cards">
-
-        <article class="card">
-          <p class="meta">Echo Global Logistics &middot; Client Representative &middot; <span class="num">2015&ndash;2019</span></p>
-          <h3>Growing a logistics account to a <span class="num">~$1M</span> run-rate</h3>
-          <p class="problem">A plant distributor placed only sporadic orders.</p>
-          <ul>
-            <li>Built a steady logistics program.</li>
-            <li>Aligned shipping with the client's business cycle.</li>
-            <li>Kept communication transparent.</li>
-          </ul>
-          <p class="result">Grew the account to a run-rate on pace for about <span class="num">$1M</span> in annual spend.</p>
-        </article>
-
-        <article class="card">
-          <p class="meta">Echo Global Logistics &middot; Client Representative &middot; <span class="num">2015&ndash;2019</span></p>
-          <h3>Pricing biofuel freight well above company benchmarks</h3>
-          <p class="problem">Biofuel loads carried cost and risk pressure on both the client and carrier side.</p>
-          <ul>
-            <li>Negotiated the client sell rate and the carrier buy rate on every load.</li>
-            <li>Balanced cost, timing, and risk in each shipping plan.</li>
-            <li>Sustained <span class="num">3</span> to <span class="num">5</span> loads per week.</li>
-          </ul>
-          <p class="result">Captured <span class="num">$800</span> to <span class="num">$1,600</span> gross margin per load against <span class="num">$100</span> to <span class="num">$300</span> company benchmarks.</p>
-        </article>
-
-        <article class="card">
-          <p class="meta">Echo Global Logistics &middot; Client Representative &middot; <span class="num">2015&ndash;2019</span></p>
-          <h3>Cutting damage claims for a medical device client</h3>
-          <p class="problem">Shipments arrived damaged, and client trust was at risk.</p>
-          <ul>
-            <li>Built a damage reduction plan for the account.</li>
-            <li>Worked the problem with the client and carriers.</li>
-            <li>Kept the client informed at each step.</li>
-          </ul>
-          <p class="result">Reduced damage claims to near zero. The client became a brand promoter.</p>
-        </article>
-
-        <article class="card">
-          <p class="meta">Credit Acceptance &middot; Credit Analyst &middot; <span class="num">2011&ndash;2013</span></p>
-          <h3>High-volume credit analysis below a 0.03% error rate</h3>
-          <p class="problem">Auto finance applications needed accurate, audit-ready decisions at scale.</p>
-          <ul>
-            <li>Promoted from collector to analyst within the first <span class="num">90</span> days.</li>
-            <li>Validated data on every file and documented decisions for internal audit.</li>
-            <li>Communicated adverse decisions to dealerships.</li>
-          </ul>
-          <p class="result">Solid member of a five-analyst team processing <span class="num">1,200+</span> applications per month, with a personal error rate below <span class="num">0.03%</span>.</p>
-        </article>
-
-        <article class="card">
-          <p class="meta">i.c.stars &middot; Technology &amp; Leadership Intern &middot; <span class="num">2026</span></p>
-          <h3>Consulting on an operations problem at scale</h3>
-          <p class="problem">A global medical supply client needed a better way to track recurring operations failures.</p>
-          <ul>
-            <li>Served on a cross-functional consulting team responding to an RFP.</li>
-            <li>Training in SQL (Microsoft), Power BI, data modeling, and Agile/Scrum.</li>
-            <li>Helped design an incident-tracking tool that consolidates recurring failures into assigned problems for accountability and resolution.</li>
-          </ul>
-          <p class="result">Contributing to the team's RFP response.</p>
-        </article>
-
-        
-        <article class="card">
-          <p class="meta">Independent Analysis &middot; <span class="num">October 2025</span></p>
-          <h3>Do central bank wins translate to household wins?</h3>
-          <p class="problem">GDP, inflation, and unemployment tell part of the story. This brief adds household debt and savings to the picture.</p>
-          <ul>
-            <li>Compared U.S. and Euro Area data from <span class="num">2015</span> to <span class="num">2025</span>.</li>
-            <li>Used FRED, ECB, Eurostat, and BIS sources.</li>
-            <li>Charted policy rates, inflation, household savings, and household debt.</li>
-          </ul>
-          <p class="result">Headline metrics converged. Household resilience diverged, and stronger safety nets may help explain the gap. What else should count when we measure economic success? <a href="brief.html">Read the brief</a></p>
-        </article>
-
-        <article class="card" id="brazil_paper">
-          <p class="meta">SNHU &middot; ECO 327 Economic Development &middot; <span class="num">2026</span></p>
-          <h3>A Binding Constraint: Corruption and Economic Development in Brazil</h3>
-          <p class="problem">Brazil's corruption is a path-dependent institutional equilibrium, not a series of isolated scandals. Reform efforts are reabsorbed because elites capture the institutions that would otherwise hold them accountable.</p>
-          <ul>
-            <li>Analyzed Brazil's corruption through the lens of institutional economics.</li>
-            <li>Drew on Todaro and Smith's path dependency framework, peer-reviewed studies of the Petrobras cartel and Lava Jato, and current Transparency International data.</li>
-            <li>Built a verification workflow that checked every factual claim against its source document before drafting.</li>
-          </ul>
-          <p class="result">The project taught me to distinguish evidence from inference, to trace claims back to their exact source sentences, and to verify derived statistics rather than accepting them as reported findings. Those are transferable skills for any research or analytical role. <a href="corruption_in_brazil.pdf">Read the paper</a></p>
-        </article>
-
-        <article class="card" id="chicago_housing">
-          <p class="meta">In progress &middot; Started <span class="num">October 2026</span></p>
-          <h3>Who Arrived, and Where Did They Live? Mapping Immigrant Settlement and Housing Pressure in Chicago</h3>
-          <img src="https://raw.githubusercontent.com/bcoppage-IC/chicago-immigrant-housing/main/outputs/map_fb_share_change.png" alt="Change in foreign-born share by Chicago community area" style="width: 100%; height: auto;">
-          <p class="problem">Compares change in foreign-born population with rent across Chicago's <span class="num">77</span> community areas, <span class="num">2011-2015</span> vs. <span class="num">2020-2024</span>. Early finding: areas where the foreign-born share fell saw larger rent increases (r = <span class="num">-0.37</span>). Avondale, Logan Square, and the Lower West Side lost about <span class="num">11,000</span> foreign-born residents combined while real rents rose <span class="num">23%</span> to <span class="num">32%</span>. Built in Python with Census API data, spatial joins, and checks against CMAP.</p>
-          <p class="result"><a href="https://github.com/bcoppage-IC/chicago-immigrant-housing" target="_blank" rel="noopener">View the repo</a></p>
-        </article>
-
-        <article class="card" id="standing_orders">
-          <p class="meta">Short Story &middot; <span class="num">2026</span></p>
-          <h3>Standing Orders</h3>
-          <p class="problem">Two coworkers at a medical supply company fix a bad order before patients go without care.</p>
-          <ul>
-            <li>The coworkers deal with office politics they cannot name out loud.</li>
-            <li>Each character carries a troop of soldiers, modeled on the Buffalo Soldiers of the 9th and 10th Cavalry.</li>
-            <li>Each soldier stands for one of that character's strengths.</li>
-          </ul>
-          <p class="result">The story shows how those strengths help and how they backfire. Fiction. Contains strong language. <a href="Standing_Orders.pdf">Read the story</a></p>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <section id="timeline" class="sec reveal">
+  <section id="more" class="sec snug reveal" aria-labelledby="more-h">
     <div class="inner wide">
-      <p class="eyebrow">03 &middot; Career Arc</p>
-      <h2>Career Arc</h2>
-      <ol class="timeline">
-        <li>
-          <span class="yrs">1992&ndash;1995</span>
-          <div><strong>U.S. Army, Combat Medic (91B)</strong><span class="desc">Emergency medical care under pressure.</span></div>
-        </li>
-        <li>
-          <span class="yrs">1995&ndash;2000</span>
-          <div><strong>Co-founder, hair salon, Huenfeld, Germany</strong><span class="desc">Built a business abroad; graduated with top grades from evening school.</span></div>
-        </li>
-        <li>
-          <span class="yrs">2000&ndash;2006</span>
-          <div><strong>Collections &amp; Receivables, Enterprise Recovery Systems and Newly Weds Foods</strong><span class="desc">Bonuses grew from about <span class="num">$2,000</span> to a <span class="num">$4,000&ndash;$6,000</span> monthly average; recognized for the lowest DSO in the unit two years running.</span></div>
-        </li>
-        <li>
-          <span class="yrs">2006&ndash;2011</span>
-          <div><strong>Installation Technician, DISH Network</strong><span class="desc">Field installs, signal troubleshooting, and customer training in Michigan.</span></div>
-        </li>
-        <li>
-          <span class="yrs">2011&ndash;2013</span>
-          <div><strong>Credit Analyst, Credit Acceptance</strong><span class="desc">Promoted within <span class="num">90</span> days; team processed <span class="num">1,200+</span> applications monthly.</span></div>
-        </li>
-        <li>
-          <span class="yrs">2015&ndash;2019</span>
-          <div><strong>Client Representative, Echo Global Logistics</strong><span class="desc">Grew a logistics account to a run-rate on pace for about <span class="num">$1M</span> in annual spend.</span></div>
-        </li>
-        <li>
-          <span class="yrs">2020&ndash;2021</span>
-          <div><strong>Benefits Advisor, HealthWorks Insurance (OneDigital)</strong><span class="desc">Sold about <span class="num">1,800</span> Medicare plans in <span class="num">13</span> months.</span></div>
-        </li>
-        <li>
-          <span class="yrs">2021&ndash;2022</span>
-          <div><strong>Loan Officer, United Bank</strong><span class="desc">Originated VA IRRRL files for <span class="num">30+</span> veterans; <span class="num">95%</span> of originated deals closed.</span></div>
-        </li>
-        <li>
-          <span class="yrs">2023&ndash;2027</span>
-          <div><strong>BSBA, MIS &amp; Economics, SNHU</strong><span class="desc">Building the analytical foundation for what's next.</span></div>
-        </li>
-        <li>
-          <span class="yrs">2026</span>
-          <div><strong>Technology &amp; Leadership Intern, i.c.stars</strong><span class="desc">SQL, Power BI, and consulting on a live client project.</span></div>
-        </li>
-        <li>
-          <span class="yrs">2027/28</span>
-          <div><strong>Master's, Data Science (planned), Georgia Tech</strong><span class="desc">Next step into data science and analytics.</span></div>
-        </li>
-      </ol>
-    </div>
-  </section>
-
-  <section id="skills" class="sec reveal">
-    <div class="inner prose">
-      <p class="eyebrow">04 &middot; Skills</p>
-      <h2>Skills</h2>
-      <!-- Heading emphasis follows the hero toggle: rust on the left column for Consultative, teal on the right column for Data. Content never changes. -->
-      <div class="skill-cols">
-        <div class="col col-client">
-          <h3>Client &amp; Operations</h3>
-          <ul class="tags">
-            <li>Account Management</li>
-            <li>Consultative Sales</li>
-            <li>Client Retention</li>
-            <li>Stakeholder Communication</li>
-            <li>Dispute Resolution</li>
-            <li>B2B Collections</li>
-            <li>DSO Reduction</li>
-            <li>Process Accuracy</li>
-            <li>Cross-functional Collaboration</li>
-            <li>Salesforce (CRM)</li>
-          </ul>
-        </div>
-        <div class="col col-data">
-          <h3>Data &amp; Technical</h3>
-          <ul class="tags">
-            <li>Excel (models, lookups, charts)</li>
-            <li>Data Validation</li>
-            <li>KPI Interpretation</li>
-            <li>Credit Analysis</li>
-            <li>Statistical Analysis</li>
-          </ul>
-          <h3>In Training</h3>
-          <ul class="tags">
-            <li>SQL</li>
-            <li>Power BI</li>
-            <li>Python</li>
-            <li>Tableau</li>
-          </ul>
-          <p class="note">Through SNHU, i.c.stars, and IT Expert Systems. Target work-ready by December <span class="num">2026</span>.</p>
-        </div>
+      <h2 id="more-h" class="eyebrow">More projects</h2>
+      <div class="mini-cards">
+        <a class="card mini" href="projects.html#central_bank">
+          <span class="meta">Independent Analysis &middot; <span class="num">October 2025</span></span>
+          <h3>Do central bank wins translate to household wins?</h3>
+          <span class="more">Read the brief</span>
+        </a>
+        <a class="card mini" href="projects.html#brazil_paper">
+          <span class="meta">SNHU &middot; ECO 327 Economic Development &middot; <span class="num">2026</span></span>
+          <h3>A Binding Constraint: Corruption and Economic Development in Brazil</h3>
+          <span class="more">Read the paper</span>
+        </a>
       </div>
     </div>
   </section>
 
   <section id="contact" class="sec reveal">
     <div class="inner prose">
-      <p class="eyebrow">05 &middot; Contact</p>
+      <p class="eyebrow">Contact</p>
       <h2>Let's talk.</h2>
       <p>Open to consulting, client success, and analyst roles in Chicago, remote, and abroad.</p>
       <ul class="contact-links">
@@ -313,7 +126,6 @@
           </a>
         </li>
         <li>
-          <!-- TODO: client will supply the GitHub handle. Replace the placeholder URL below. -->
           <a href="https://github.com/bcoppage-IC" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="5.5" r="2.5"/><circle cx="6" cy="18.5" r="2.5"/><circle cx="18" cy="9" r="2.5"/><path d="M6 8v8M18 11.5c0 3-4 3.5-12 5.5"/></svg>
             GitHub
@@ -327,63 +139,6 @@
 
 <footer>&copy; <span class="num">2026</span> Ben Coppage &middot; Chicago, IL</footer>
 
-<script>
-(function () {
-  var d = document, rm = matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var T = {
-    consultative: "I turn complex client challenges into clear decisions, across logistics, credit, benefits, and lending.",
-    data: "Building SQL, Python, and Power BI skills to pair 15+ years of client insight with real analysis."
-  };
-  var btns = d.querySelectorAll('.toggle button'), tag = d.getElementById('tagline');
-  btns.forEach(function (b) {
-    b.addEventListener('click', function () {
-      btns.forEach(function (x) { x.setAttribute('aria-pressed', x === b); });
-      tag.textContent = T[b.dataset.track];
-      d.body.dataset.track = b.dataset.track;
-    });
-  });
-  function count(el) {
-    var t = +el.dataset.to, s = null;
-    (function step(ts) {
-      s = s || ts;
-      var p = Math.min((ts - s) / 900, 1);
-      el.textContent = (el.dataset.pre || '') + Math.round(t * p).toLocaleString('en-US') + (el.dataset.suf || '');
-      if (p < 1) requestAnimationFrame(step);
-    })(performance.now());
-  }
-  
-    window.addEventListener('load', function () {
-        var id = location.hash.slice(1) || new URLSearchParams(location.search).get('card');
-    var t = id && d.getElementById(id);
-    if (t) window.scrollTo(0, t.getBoundingClientRect().top + window.pageYOffset - d.querySelector('header').offsetHeight - 16);
-  });
-
-  if (!('IntersectionObserver' in window)) return;
-  if (!rm) {
-    d.documentElement.classList.add('js');
-    var io = new IntersectionObserver(function (es) {
-      es.forEach(function (e) {
-        if (!e.isIntersecting) return;
-        e.target.classList.add('in');
-        e.target.querySelectorAll('[data-to]').forEach(count);
-        io.unobserve(e.target);
-      });
-    }, { threshold: 0.12 });
-    d.querySelectorAll('.reveal').forEach(function (s) { io.observe(s); });
-  }
-  var links = d.querySelectorAll('.links a'), hdr = d.querySelector('header');
-  var so = new IntersectionObserver(function (es) {
-    es.forEach(function (e) {
-      if (e.isIntersecting) links.forEach(function (a) {
-        a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id);
-      });
-    });
-  }, { rootMargin: '-45% 0px -50% 0px' });
-  d.querySelectorAll('main section[id]').forEach(function (s) { so.observe(s); });
-  new IntersectionObserver(function (e) {
-    hdr.classList.toggle('scrolled', !e[0].isIntersecting);
-  }).observe(d.getElementById('top'));
-})();
-</script>
+<script src="site.js"></script>
 </body>
 </html>
