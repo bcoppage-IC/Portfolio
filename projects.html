@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects | Ben Coppage</title>
+<meta name="description" content="Data projects and writing by Ben Coppage: a Chicago immigrant settlement and rent dashboard, a central bank brief, a paper on corruption in Brazil, and a short story.">
+<meta property="og:title" content="Projects | Ben Coppage">
+<meta property="og:description" content="Data projects and writing by Ben Coppage: a Chicago immigrant settlement and rent dashboard, a central bank brief, a paper on corruption in Brazil, and a short story.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bcoppage-ic.github.io/Portfolio/projects.html">
+<meta property="og:image" content="https://bcoppage-ic.github.io/Portfolio/images/og-image.jpg?v=2">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <nav aria-label="Primary">
+    <a class="brand" href="index.html">Ben Coppage</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Menu">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <ul class="links" id="nav-links">
+      <li><a href="projects.html" aria-current="page">Projects</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+      <li><a class="nav-cta" href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section id="work" class="sec reveal">
+    <div class="inner prose">
+      <p class="eyebrow">Projects</p>
+      <h2>Selected Work</h2>
+      <h3 class="eyebrow group-label">Data &amp; Analysis</h3>
+      <div class="cards">
+
+        <article class="card" id="chicago_housing">
+          <p class="meta">Data Project &middot; <span class="num">2026</span></p>
+          <h3>Following the Shift: Immigrant Settlement and Rent in Chicago</h3>
+          <a class="card-img" href="https://bcoppage-ic.github.io/chicago-immigrant-housing/" target="_blank" rel="noopener"><img src="images/chicago_dashboard.png" alt="Chicago immigrant settlement and rent dashboard, showing four key figures and a map of the 77 community areas" width="2560" height="1600" loading="lazy"></a>
+          <p class="problem">Compares change in immigrant population with rent across Chicago's <span class="num">77</span> community areas, <span class="num">2015</span> vs. <span class="num">2024</span>. An interactive dashboard ranks every area, and sliders let users decide what matters most. Built with Python, JavaScript, and Census API data.</p>
+          <div class="result actions">
+            <a class="btn fill" href="https://bcoppage-ic.github.io/chicago-immigrant-housing/" target="_blank" rel="noopener">View the dashboard</a>
+            <a href="https://github.com/bcoppage-IC/chicago-immigrant-housing" target="_blank" rel="noopener">View the code</a>
+          </div>
+        </article>
+
+        <article class="card" id="central_bank">
+          <p class="meta">Independent Analysis &middot; <span class="num">October 2025</span></p>
+          <h3>Do central bank wins translate to household wins?</h3>
+          <p class="problem">GDP, inflation, and unemployment tell part of the story. This brief adds household debt and savings to the picture.</p>
+          <ul>
+            <li>Compared U.S. and Euro Area data from <span class="num">2015</span> to <span class="num">2025</span>.</li>
+            <li>Used FRED, ECB, Eurostat, and BIS sources.</li>
+            <li>Charted policy rates, inflation, household savings, and household debt.</li>
+          </ul>
+          <p class="result">Headline metrics converged. Household resilience diverged, and stronger safety nets may help explain the gap. What else should count when we measure economic success? <a href="brief.html">Read the brief</a></p>
+        </article>
+
+      </div>
+      <h3 class="eyebrow group-label">Writing</h3>
+      <div class="cards">
+
+        <article class="card" id="brazil_paper">
+          <p class="meta">SNHU &middot; ECO 327 Economic Development &middot; <span class="num">2026</span></p>
+          <h3>A Binding Constraint: Corruption and Economic Development in Brazil</h3>
+          <p class="problem">Brazil's corruption is a path-dependent institutional equilibrium, not a series of isolated scandals. Reform efforts are reabsorbed because elites capture the institutions that would otherwise hold them accountable.</p>
+          <ul>
+            <li>Analyzed Brazil's corruption through the lens of institutional economics.</li>
+            <li>Drew on Todaro and Smith's path dependency framework, peer-reviewed studies of the Petrobras cartel and Lava Jato, and current Transparency International data.</li>
+            <li>Built a verification workflow that checked every factual claim against its source document before drafting.</li>
+          </ul>
+          <p class="result">The project taught me to distinguish evidence from inference, to trace claims back to their exact source sentences, and to verify derived statistics rather than accepting them as reported findings. Those are transferable skills for any research or analytical role. <a href="corruption_in_brazil.pdf">Read the paper</a></p>
+        </article>
+
+        <article class="card" id="standing_orders">
+          <p class="meta">Short Story &middot; <span class="num">2026</span></p>
+          <h3>Standing Orders</h3>
+          <p class="problem">Two coworkers at a medical supply company fix a bad order before patients go without care.</p>
+          <ul>
+            <li>The coworkers deal with office politics they cannot name out loud.</li>
+            <li>Each character carries a troop of soldiers, modeled on the Buffalo Soldiers of the 9th and 10th Cavalry.</li>
+            <li>Each soldier stands for one of that character's strengths.</li>
+          </ul>
+          <p class="result">The story shows how those strengths help and how they backfire. Fiction. Contains strong language. <a href="Standing_Orders.pdf">Read the story</a></p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="sec reveal">
+    <div class="inner prose">
+      <p class="eyebrow">Contact</p>
+      <h2>Let's talk.</h2>
+      <p>Open to consulting, client success, and analyst roles in Chicago, remote, and abroad.</p>
+      <ul class="contact-links">
+        <li>
+          <a href="mailto:benlevi.coppage@gmail.com">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 7l8.5 6 8.5-6"/></svg>
+            benlevi.coppage@gmail.com
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/bencoppage" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 10.5V16M8 7.5v.01M12 16v-5.5M12 13c0-1.7 1-2.5 2.3-2.5S16.5 11.3 16.5 13V16"/></svg>
+            linkedin.com/in/bencoppage
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/bcoppage-IC" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="5.5" r="2.5"/><circle cx="6" cy="18.5" r="2.5"/><circle cx="18" cy="9" r="2.5"/><path d="M6 8v8M18 11.5c0 3-4 3.5-12 5.5"/></svg>
+            GitHub
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer>&copy; <span class="num">2026</span> Ben Coppage &middot; Chicago, IL</footer>
+
+<script src="site.js"></script>
+</body>
+</html>
