@@ -75,6 +75,7 @@ section[id], article[id] { scroll-margin-top: 5rem; }
 .sec { padding: 6rem var(--u); }
 main > .sec:first-child { padding-top: 4rem; }
 .sec.snug { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+.sec.snug .inner > :last-child { margin-bottom: 0; }
 .inner { margin: 0 auto; }
 .prose { max-width: 720px; }
 .wide { max-width: 1040px; }
