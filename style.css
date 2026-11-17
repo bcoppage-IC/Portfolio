@@ -199,6 +199,22 @@ h1 {
 .contact-links a:hover { text-decoration: underline; }
 .contact-links svg { width: 20px; height: 20px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
 
+/* Project detail page */
+.back { font-size: 0.9375rem; margin-bottom: 1.5rem; }
+.back a { text-decoration: none; }
+.back a:hover { text-decoration: underline; }
+.byline { color: var(--ink-soft); margin-bottom: 2rem; }
+.plain { margin: 0 0 var(--u); padding-left: 1.25rem; max-width: 68ch; }
+.plain li { margin-bottom: 0.375rem; }
+.table-wrap { overflow-x: auto; margin: 0 0 var(--u); }
+.compare { width: 100%; border-collapse: collapse; font-size: 0.9375rem; }
+.compare th, .compare td { text-align: left; vertical-align: top; padding: 0.625rem 0.75rem; border-bottom: 1px solid var(--line); }
+.compare thead th { font-family: var(--mono); font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); font-weight: 500; }
+.compare tbody th { font-weight: 600; color: var(--ink); white-space: nowrap; }
+.compare td { color: var(--ink-soft); }
+.compare td:last-child { color: var(--ink); }
+.compare .num { color: var(--signal); }
+
 footer { text-align: center; color: var(--ink-soft); font-size: 0.875rem; padding: 2rem var(--u) 3rem; }
 
 @media (max-width: 900px) {
