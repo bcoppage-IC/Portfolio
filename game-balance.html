@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Game Balance and OOAD | Ben Coppage</title>
+<meta name="description" content="How Ben Coppage balanced a team-built multiplayer game with bot simulations and refactored its rules into tested, object-oriented classes.">
+<meta property="og:title" content="Balancing a Multiplayer Game with Simulation and OOAD | Ben Coppage">
+<meta property="og:description" content="Bot simulations, a search of 1,800 level orders, and a 14-step OOAD refactor with 8 test suites.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://bcoppage-ic.github.io/Portfolio/game-balance.html">
+<meta property="og:image" content="https://bcoppage-ic.github.io/Portfolio/images/og-image.jpg?v=2">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <nav aria-label="Primary">
+    <a class="brand" href="index.html">Ben Coppage</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Menu">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <ul class="links" id="nav-links">
+      <li><a href="projects.html" aria-current="page">Projects</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+      <li><a class="nav-cta" href="projects.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section class="sec reveal">
+    <div class="inner prose">
+      <p class="back"><a href="projects.html#game_balance">&larr; All projects</a></p>
+      <p class="eyebrow">Team Project &middot; i.c.stars Cycle <span class="num">60</span> &middot; <span class="num">2026</span></p>
+      <h2>Balancing a Multiplayer Game with Simulation and OOAD</h2>
+      <p class="byline">Concept and art by Myia Mack. Rules, economy, balance testing, and architecture by Ben Coppage. The game is revealed on November <span class="num">27</span>, so this page covers my methods and results, not the game itself.</p>
+
+      <ul class="stats">
+        <li><span class="stat-num">69%</span><span class="stat-label">success rate in bot testing</span></li>
+        <li><span class="stat-num">2.2</span><span class="stat-label">point gap between player types (goal: 1 to 3)</span></li>
+        <li><span class="stat-num">~25</span><span class="stat-label">rule classes after the refactor</span></li>
+        <li><span class="stat-num">8</span><span class="stat-label">test suites run after every step</span></li>
+      </ul>
+
+      <h3 class="eyebrow group-label">Problem</h3>
+      <p>One of the three player types was winning more often than the others. The rules were also stuck inside one large file mixed with screen code, so they were hard to change or test.</p>
+
+      <h3 class="eyebrow group-label">What I did</h3>
+      <ul class="plain">
+        <li>Designed the rules and points economy.</li>
+        <li>Built a Python simulation that plays thousands of bot games.</li>
+        <li>Searched <span class="num">1,800</span> level orders and <span class="num">96</span> rule combinations to find the fairest setup.</li>
+        <li>Refactored the rules into about <span class="num">25</span> classes using OOAD: one job per class, inheritance for player types, and private data.</li>
+        <li>Followed a <span class="num">14</span>-step refactor plan, running <span class="num">8</span> test suites after every step.</li>
+      </ul>
+
+      <h3 class="eyebrow group-label">Before and after</h3>
+      <div class="table-wrap">
+        <table class="compare">
+          <thead>
+            <tr><th scope="col"></th><th scope="col">Before</th><th scope="col">After</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Rule code</th><td>Mixed into one file</td><td><span class="num">19</span> rule files, about <span class="num">25</span> classes</td></tr>
+            <tr><th scope="row">Main file</th><td><span class="num">844</span> lines, rules and screens together</td><td><span class="num">568</span> lines, screens only</td></tr>
+            <tr><th scope="row">Tests</th><td>None</td><td><span class="num">8</span> test suites plus a baseline check</td></tr>
+            <tr><th scope="row">Save and load</th><td>None</td><td>Full game state, at any step</td></tr>
+            <tr><th scope="row">Repeat a test run</th><td>Not possible</td><td>Exact, using a fixed random seed</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="eyebrow group-label">How it was built</h3>
+      <p>AI-assisted. I designed the rules, the class structure, and the test plan, and wrote the specs. AI coding tools (Claude Code, Antigravity) wrote the code from those specs. I checked every step with tests.</p>
+
+      <h3 class="eyebrow group-label">Results</h3>
+      <ul class="plain">
+        <li>About <span class="num">69%</span> success rate. In typical play, the three player types are within <span class="num">2.2</span> points of each other, inside the <span class="num">1</span> to <span class="num">3</span> point goal.</li>
+        <li>One <span class="num">844</span>-line file became <span class="num">19</span> rule files with no screen code mixed in.</li>
+        <li>The game can be saved, reloaded, and replayed exactly.</li>
+      </ul>
+
+      <h3 class="eyebrow group-label">Known gaps</h3>
+      <ul class="plain">
+        <li>When players spend points strategically, the gap between types grows to about <span class="num">9</span> points.</li>
+        <li>The screen code still assumes one local player. Multiplayer is the next phase.</li>
+      </ul>
+
+      <h3 class="eyebrow group-label">Status</h3>
+      <p>Under team review, not yet merged into the main game.</p>
+
+      <h3 class="eyebrow group-label">Tools</h3>
+      <ul class="tags">
+        <li>Python</li><li>JavaScript</li><li>Node.js</li><li>Git</li><li>Claude Code</li><li>Antigravity</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer>&copy; <span class="num">2026</span> Ben Coppage &middot; Chicago, IL</footer>
+
+<script src="site.js"></script>
+</body>
+</html>
